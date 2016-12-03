@@ -27444,6 +27444,7 @@
 	  var temp = _ref.temp,
 	      location = _ref.location;
 	
+	  var prepLocation = location ? location[0].toUpperCase() + location.slice(1) : location;
 	  return React.createElement(
 	    "div",
 	    null,
@@ -27453,7 +27454,7 @@
 	      "Its ",
 	      temp,
 	      "\xB0C in ",
-	      location
+	      prepLocation
 	    )
 	  );
 	};
