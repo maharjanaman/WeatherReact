@@ -27368,7 +27368,10 @@
 	
 	    function renderError() {
 	      if (typeof errorMessage === 'string') {
-	        return React.createElement(ErrorModal, null);
+	        return (
+	          // Response gives bad error
+	          React.createElement(ErrorModal, null)
+	        );
 	      }
 	    }
 	
